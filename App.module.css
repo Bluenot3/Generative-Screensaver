@@ -1,0 +1,78 @@
+
+.appContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #080808;
+  color: #c0c0c0;
+}
+
+.sidebar {
+  width: 360px;
+  background-color: #111;
+  border-right: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+  position: absolute;
+}
+
+.header {
+  padding: 20px;
+  background: #000;
+  border-bottom: 1px solid #222;
+}
+
+.header h1 {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.previewContainer {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+.previewToolbar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  display: flex;
+  gap: 10px;
+}
+
+.btnIcon {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+
+.btnIcon:hover {
+  background: #fff;
+  color: #000;
+}

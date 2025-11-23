@@ -1,0 +1,5 @@
+{
+  "name": "ZEN VibeSaver Studio",
+  "description": "A full-stack AI-assisted application to design, preview, and export 3D animated screensavers. Features real-time Three.js rendering, Gemini-powered vibe generation, and standalone bundle export.",
+  "requestFramePermissions": []
+}
